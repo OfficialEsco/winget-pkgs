@@ -4,7 +4,7 @@ PackageIdentifier: BBC.iPlayer
 PackageVersion: 2.13.3
 Installers:
 - Architecture: x64
-  InstallerType: exe
+  InstallerType: test
   InstallerUrl: https://static.files.bbci.co.uk/iplayer-pc-download-app/releases/win32-x64/BBCiPlayerDownloadsSetup-2.13.3.exe
   InstallerSha256: B91BFB30322582B921EC7EC50326482112A29561E1496851DB1A6D661CFD6532
 ManifestType: installer
