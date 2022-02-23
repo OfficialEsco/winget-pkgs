@@ -1,6 +1,6 @@
 name: 'Package Issue'
 description: Report issues and unexpected behaviour of packages with WinGet Client
-title: "[Package Issue]: <PackageIdentifier>"
+title: "[Package Issue]: Package.Identifer"
 labels: ["Issue-Bug"]
 body:
   - type: markdown
@@ -9,7 +9,7 @@ body:
         Please create issues related to the winget.exe client [here](https://github.com/microsoft/winget-cli/issues/new/choose)
   - type: checkboxes
     attributes:
-      label: Please confirm the following.
+      label: Please confirm these before moving forward
       description: Please confirm the following before posting your issue.
       options:
         - label: I have search for my issue and not found a work-in-progress/duplicate/resolved issue.
@@ -17,9 +17,8 @@ body:
         - label: I have not been informed if the issue is resolved in a preview version of the winget client.
           required: true
   - type: dropdown
-    id: issue
     attributes:
-      label: 
+      label: Category of the issue
       description: What kind of issue are you running into?
       options:
         - Installation issue.
