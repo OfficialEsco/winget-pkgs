@@ -71,5 +71,6 @@ body:
   - type: textarea
     attributes:
       label: Screenshots and Logs
+      description: Please upload logs & screenshots since they will help us to find the root cause of the issue. You can find the location of the logs by running `winget --info`.
     validations:
       required: false
