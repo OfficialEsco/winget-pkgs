@@ -58,7 +58,7 @@ body:
   - type: textarea
     attributes:
       label: Environment
-      description: Please copy and paste your winget --info output here.
+      description: Please copy and paste your `winget --info` output here.
       placeholder: |
         [winget --info]
         Windows Package Manager <version>
@@ -70,10 +70,9 @@ body:
     validations:
       required: true
   - type: textarea
-    id: logs
     attributes:
       label: Relevant log output
-      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
+      description: Please copy and paste any relevant log output. You can get the logs locations using `winget --info`
       render: shell
     validations:
       required: false
