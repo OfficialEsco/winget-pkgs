@@ -1,18 +1,18 @@
-name: 'Package issue'
-description: Report Package issues or unexpected behavior
-title: "[Issue]: <PackageIdentifier>"
+name: 'Package Issue'
+description: Report issues and unexpected behaviour of packages with WinGet Client
+title: "[Package Issue]: <PackageIdentifier>"
 labels: ["Issue-Bug"]
 body:
   - type: markdown
     attributes:
       value: |
-        Please create issues related to the winget.exe client here [microsoft/winget-cli](https://github.com/microsoft/winget-cli/issues/new/choose)
+        Please create issues related to the winget.exe client [here](https://github.com/microsoft/winget-cli/issues/new/choose)
   - type: checkboxes
     attributes:
-      label: Pre-checks
-      description: Please go through these Pre-checks before submitting a issue.
+      label: Please confirm the following.
+      description: Please confirm the following before posting your issue.
       options:
-        - label: I have search for my issue and not found a duplicate/resolved issue.
+        - label: I have search for my issue and not found a work-in-progress/duplicate/resolved issue.
           required: true
         - label: I have not been informed if the issue is resolved in a preview version of the winget client.
           required: true
@@ -22,12 +22,13 @@ body:
       label: Issue Type
       description: What kind of issue are you running into?
       options:
-        - Other
-        - Installation issue
-        - Side-By-Side installation
+        - Installation issue.
+        - Side-By-Side installation.
         - No applicable update found.
-        - Different install technology
-        - Multiple installed packages found
+        - Different install technology.
+        - Multiple installed packages found.
+        - Installer mash mismatch.
+        - Other
     validations:
       required: true
   - type: textarea
@@ -60,9 +61,9 @@ body:
       description: Please copy and paste your winget --info output here.
       placeholder: |
         [winget --info]
-        Windows Package Manager version
-        Windows: Windows.Desktop version
-        Package: Microsoft.DesktopAppInstaller version
+        Windows Package Manager <version>
+        Windows: Windows.Desktop <version>
+        Package: Microsoft.DesktopAppInstaller <version>
 
         Any other software?
       render: shell
